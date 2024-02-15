@@ -44,7 +44,7 @@ def add_product_route():
 def update_product_route(product_id):
     conn = sqlite3.connect('inventoryManagement.db')
     if request.method == 'GET':
-        # Aquí obtienes los detalles del producto para mostrar en el formulario
+        # Here you get the product details to display on the form.
         cur = conn.cursor()
         cur.execute("SELECT name, quantity, price FROM products WHERE id=?", (product_id,))
         product_details = cur.fetchone()
@@ -54,7 +54,7 @@ def update_product_route(product_id):
         else:
             return "Producto no encontrado"
     elif request.method == 'POST':
-        # Aquí obtienes los datos actualizados del formulario y llamas a la función update_product
+        # Here you get the updated data from the form and call the update_product function.
         name = request.form['name']
         quantity = request.form['quantity']
         price = request.form['price']
