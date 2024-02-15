@@ -1,0 +1,42 @@
+/* Estilos adicionales */
+
+/* Alinear el contenido del formulario al centro */
+.card-body {
+    text-align: center;
+}
+
+/* Estilo para los botones */
+.btn {
+    margin-right: 5px; /* Añade un espacio entre los botones */
+}
+
+/* Estilos para las tablas */
+.table {
+    margin-top: 20px; /* Añade un espacio superior a la tabla */
+}
+
+/* Estilos para los encabezados de tabla */
+.table th {
+    font-weight: bold; /* Hace que los encabezados de tabla sean negritas */
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+/* Estilos para el diseño de columnas usando flexbox */
+.row {
+    display: flex; /* Establece el contenedor de fila como flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no hay suficiente espacio */
+}
+
+.col-md-6 {
+    flex: 0 0 50%; /* Establece el ancho de cada columna al 50% del contenedor padre */
+    max-width: 50%; /* Limita el ancho máximo de cada columna al 50% */
+}
+
+.card {
+    width: 100%; /* Ajusta el ancho de la tarjeta para ocupar todo el espacio disponible */
+    margin-bottom: 20px; /* Añade un espacio inferior entre las tarjetas */
+}
